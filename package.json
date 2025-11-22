@@ -1,0 +1,10 @@
+{
+"name":"github-actions-demo",
+"version":"1.0.0",
+"description":Node.js CI/CD Demo",
+"main":"app.js",
+"scrips":{
+"start":"node app.js",
+"test":"echo\"Test passed\" && exit 0"
+}
+}
