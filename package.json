@@ -1,13 +1,8 @@
 {
   "name": "my-nodejs-app",
   "version": "1.0.0",
-  "description": "Node.js CI/CD Demo",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"No tests yet\" && exit 0",
-    "start": "node app.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+    "test": "echo 'No tests' && exit 0"
+  }
 }
