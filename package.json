@@ -1,10 +1,13 @@
 {
-"name":"github-actions-demo",
-"version":"1.0.0",
-"description":Node.js CI/CD Demo",
-"main":"app.js",
-"scrips":{
-"start":"node app.js",
-"test":"echo\"Test passed\" && exit 0"
-}
+  "name": "my-nodejs-app",
+  "version": "1.0.0",
+  "description": "Node.js CI/CD Demo",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"No tests yet\" && exit 0",
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
