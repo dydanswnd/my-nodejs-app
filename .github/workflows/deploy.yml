@@ -1,0 +1,25 @@
+name: Node.js CI/CD
+
+on:
+  push:
+    branches: [ "master" ]
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Install dependencies
+      run: npm install
+    
+    - name: Run tests
+      run: npm test
+    
+    - name: Restart application
+      run: |
+        npm install -g pm2
+        pm2 stop github-app || true
+        pm2 start app.js --name github-app
+        pm2 save
